@@ -2,8 +2,14 @@ package eserciziday2;
 
 public class Chiamata {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		public int chiamata;
+		public int numero;
+		
+		public chiamata (int chiamata, int numero) {
+			this.chiamata = chiamata;
+			this.numero = numero;
+		
 
 	}
 
