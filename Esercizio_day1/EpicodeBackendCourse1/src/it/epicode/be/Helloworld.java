@@ -10,6 +10,9 @@ public static void main (String[] args)
 		System.out.println("This is my first Epicode Java Project!");
 		System.out.println(conca("Aoa", 5));
 		System.out.println(perimetroRettangolo(6,8));
+	//	System.out.println(moltiplicazione(5,5));
+		System.out.println(pariDispari(8));
+		System.out.println(perimetroTriangolo(10,8,6));
 		}
 
 
@@ -18,7 +21,7 @@ public static void main (String[] args)
 //	public static int moltiplicazione(int x, int y); {
 //		int result = x * y;
 //		return result;
-//		System.out.println(moltiplicazione(5,5));
+//		
 //	}
 		public static String conca(String x, int y) {
 			String result = " " + y;
@@ -47,7 +50,18 @@ public static void main (String[] args)
 			float result = x + y;
 			return result;
 			
-			
+		}
+		
+		public static int pariDispari(int x ) {
+			if (x % 4 == 0) {
+				return 0;
+			} else return 1;
+		}
+		
+		public static int perimetroTriangolo(float x, float y, float z) {
+			float p = (x + y + z) / 2;
+			float area = (float) Math.sqrt(p * (p - x) * (p - y) * (p - z));
+			return (int) area;
 		}
 		
 		
