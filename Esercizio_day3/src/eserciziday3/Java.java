@@ -55,4 +55,36 @@ public class Java {
 	default:
 		System.out.println("Error!");
 	}
+	
+}
+	
+	
+		//Esercizio 3
+	
+	
+	public static void While () {
+		Scanner sc = new Scanner(System.in);
+		String x;
+		
+			do {
+				System.out.println(""
+						+ "x = sc.nextInt(parola: ");
+				x = sc.nextLine();
+				String[] xAr = x.split("");
+				String xArJ = xAr.toString().join("," , xAr);
+				System.out.print(xArJ);
+			}	while (!x.equals(":q")); 
+	}
+	
+	//Esercizio 4
+	
+	public static void For() {
+		int x;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("numero: ");
+		x = sc.nextInt();
+		for (int i =x; i>= 1; i--) {
+			System.out.println(i-1);
+		}
+	}
 }
