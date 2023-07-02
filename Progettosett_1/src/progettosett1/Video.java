@@ -1,33 +1,33 @@
 package progettosett1;
 
-public class Video implements Playable {
+public class Video extends PlayerMultimediale implements luminosita,volume {
 
-	public static void main(String[] args) {
-		System.out.println();
+	
 
-	}
-
-	private String title;
+	
 	private int duration;
 	private int volume;
 	private int luminosita;
 	
 	public Video(String title, int duration, int volume, int luminosita) {
-		this.title = title;
+		super(title);
 		this.duration = duration;
 		this.volume = volume;
 		this.luminosita = luminosita;
 	}
-	
-	@Override
-	public String getTitle() {
-		return title;
+	public int getVolume() {
+		return volume;
+	}
+
+
+	public int getLuminosita() {
+		return luminosita;
 	}
 	
 	
-	@Override
+	
 	public void play() {
-		 System.out.println("Playing video: " + title + " (Duration: " + duration + " seconds)");
+		 System.out.println("Playing video: " + getTitle());
 	        for (int i = 0; i < duration; i++) {
 	            for (int j = 0; j < volume; j++) {
 	                System.out.print("!");
@@ -47,6 +47,7 @@ public class Video implements Playable {
 	public void alzaVolume() {
 		volume++;
 	}
+	
 	public void diminuisciLuminosita() {
 		if (luminosita > 0) {
 			luminosita--;
@@ -55,6 +56,7 @@ public class Video implements Playable {
 	public void aumentaLuminosita() {
 		luminosita++;
 	}
+	
 }
 	
 	
