@@ -3,17 +3,17 @@ package progettosett1;
 
 public abstract class PlayerMultimediale {
 
-	private String titolo;
+	private String title;
 	
-	public PlayerMultimediale(String titolo){
+	public PlayerMultimediale(String title){
 		super();
-		this.titolo = titolo;
+		this.title = title;
 		  
 	        
 	}
 	
-	 	public String getTitolo() {
-	 		return titolo;
+	 	public String getTitle() {
+	 		return title;
 	 	}
 
 }
