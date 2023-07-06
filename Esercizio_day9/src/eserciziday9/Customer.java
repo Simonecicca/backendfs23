@@ -13,7 +13,7 @@ public class Customer {
 
 	}
 	
-	 private Long id;
+	 	private Long id;
 	    private String name;
 	    private int tier;
 
@@ -30,9 +30,16 @@ public class Customer {
 	    public String getName() {
 	        return name;
 	    }
+	    
+	    public void setName(String name) {
+	        this.name = name;
+	    }
 
-	    public int getTier() {
+	    public Integer getTier() {
 	        return tier;
+	    }
+	    public void setTier(Integer tier) {
+	        this.tier = tier;
 	    }
 
 }
