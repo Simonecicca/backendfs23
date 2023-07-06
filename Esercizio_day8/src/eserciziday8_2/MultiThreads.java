@@ -1,19 +1,19 @@
 package eserciziday8_2;
 
 import java.util.Random;
+import java.util.List;
 
-public class MultiThreads {
+public class MultiThreads implements Runnable {
+	
+	private Logger log = LoggerFactory.getLogger(MultiThreads.class);
+	private int[] arr;
+	
 
-	public static void main(String[] args) throws InterruptedException {
-		int[] array = generateRandomArray(3000);
-		int[] sommaParziale = new int[3];
-		Thread[] threads = Thread[3];
+	public static void main(String[] args) {
 		
-		for (int i=0; i < 3; i++)  {
-			int startIndex = i*1000;
-			int endIndex = startIndex + 999;
-		}
-
+		
+		
 	}
-
+		
+		
 }
