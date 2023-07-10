@@ -1,6 +1,6 @@
 package progettosett2;
 
-public class Magazine extends Catalog {
+public class Magazine extends CatalogItem {
 	
 	private Periodicity periodicity;
 

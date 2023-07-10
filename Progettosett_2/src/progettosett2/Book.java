@@ -1,6 +1,6 @@
 package progettosett2;
 
-public class Book extends Catalog {
+public class Book extends CatalogItem {
 	
 	private String author;
 	private String genre;
