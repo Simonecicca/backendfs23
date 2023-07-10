@@ -8,6 +8,12 @@ public class MainProject {
 
 	public static void main(String[] args) {
 		
+		/*Ho provato a ripassare e fare il progetto ma penso di aver mischiato troppe cose random qua e là, purtroppo riesco più
+		a capire la teoria ma quando mi trovo davanti al progetto la mia testa si blocca, magari riesco ad impostare
+		classi etc. ma poi nell'effettivo quando si tratta di applicare metodi etc. non mi viene nulla, faccio ricerca etc. ma poi
+		quello che è esce è abbastanza confuso. Comunque mi impegnerò a rimanere al passo con la teoria, provado comunque ad esercitarmi
+		sul codice. A me il voto non interessa quindi le correzioni le userò per capire dove migliorare, grazie!*/
+		
 		Catalog catalog = new Catalog();
 
         Book b1 = new Book("123456789", "Book 1", 2020, 200, "Author 1", "Genre 1");
