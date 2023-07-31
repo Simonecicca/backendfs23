@@ -33,4 +33,13 @@
     <fullyQualifiedTypeName name="com.epicode.GodfatersPizza.classes.DrinkLemonade"/>
     <fullyQualifiedTypeName name="com.epicode.GodfatersPizza.classes.Water"/>
     <fullyQualifiedTypeName name="com.epicode.GodfatersPizza.classes.Wine"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 </qualifiedTypeNameHistroy>

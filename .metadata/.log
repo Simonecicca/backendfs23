@@ -8075,3 +8075,219 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 18:48:47.369
 !MESSAGE Classpath changed for project: introSpring
+!SESSION 2023-07-30 13:03:17.089 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2023-07-30 13:03:47.328
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-30 13:03:47.328
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-30 13:03:47.328
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-30 13:03:52.098
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\SimoneC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Users\SimoneC\eclipse\jee-2022-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\SimoneC\eclipse\jee-2022-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\SimoneC\eclipse\jee-2022-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/JavaEclipse/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1690715032097
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:52.098
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-30 13:03:52.129
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19360
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-07-30 13:03:52.392
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:288)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-30 13:03:54.295
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SimoneC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.652
+!MESSAGE Boot project ADDED: Esercizio15
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.653
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.657
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.742
+!MESSAGE Boot project ADDED: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.767
+!MESSAGE Boot project ADDED: Spring_1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:03:54.787
+!MESSAGE Boot project ADDED: introSpring
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:24:52.155
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:35:14.296
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:58:10.917
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:58:30.154
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:58:42.629
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:58:44.694
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 13:59:08.951
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 14:00:13.664
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 22:04:24.085
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 23:27:24.317
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-30 23:27:53.807
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 00:17:43.659
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 01:59:42.725
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 01:59:59.739
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:00:14.721
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:00:41.645
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:00:58.999
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:01:39.054
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:10:51.886
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:11:09.590
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:11:11.735
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:12:12.729
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-31 02:13:33.213
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:13:49.355
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:13:54.196
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 02:14:33.976
+!MESSAGE Classpath changed for project: Progettosett_4
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-31 02:16:43.951
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
