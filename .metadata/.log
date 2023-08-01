@@ -8608,3 +8608,63 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 02:10:43.431
 !MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 02:20:34.993
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-01 02:36:15.410
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 02:41:29.661
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:01:07.023
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-01 03:06:46.061
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:11:10.077
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:12:29.674
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:15:01.823
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:16:45.630
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:18:53.728
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:29:49.857
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:44:03.628
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:45:33.616
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-01 03:53:17.425
+!MESSAGE Classpath changed for project: Spring_esercizio_mvc2

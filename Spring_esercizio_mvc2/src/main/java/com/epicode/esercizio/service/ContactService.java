@@ -1,5 +1,7 @@
 package com.epicode.esercizio.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,6 +20,10 @@ public class ContactService {
 		Contact c = contactProvider.getObject();
 		contactRepo.save(c);
 		
+	}
+	
+	public List<Contact> getAllContacts() {
+		return (List<Contact>) contactRepo.findAll();
 	}
 	
 	
